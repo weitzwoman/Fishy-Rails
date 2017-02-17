@@ -1,0 +1,10 @@
+<%= render "layouts/errors", :object => @product %>
+
+<%= form_for @product do |f| %>
+  <%= f.text_field :user_id, type: 'hidden', value: current_user.id %>
+  <%= f.text_field :name, placeholder: "Product Name" %>
+  <%= f.text_field :description, placeholder: "Product Description" %>
+  <%= f.number_field :cost, :step => 0.01, placeholder: "Product Cost" %>
+  <%= f.text_field :image, placeholder: "Image URL"%>
+  <%= f.submit %>
+<% end %>
