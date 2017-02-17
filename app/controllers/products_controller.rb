@@ -2,8 +2,9 @@ class ProductsController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    @products = Products.all
-    @user = current_user.id
+    # @product = Product.new
+    @products = Product.all
+    # @user = current_user.id
   end
 
   def new
@@ -11,9 +12,9 @@ class ProductsController < ApplicationController
   end
 
   def create
-    @prodcut = Product.new
+    @product = Product.new(product_params)
     if @product.save
-      redirect_to products_path
+      redirect_to user_products_path
     else
       render :back
     end
@@ -46,4 +47,8 @@ class ProductsController < ApplicationController
     redirect_to products_path
   end
 
+private
+  def product_params
+    params.require(:product).permit(:name, :description, :price)
+  end
 end

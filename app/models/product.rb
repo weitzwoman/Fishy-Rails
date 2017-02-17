@@ -1,6 +1,6 @@
 class Product < ActiveRecord::Base
   has_many :comments
-  has_many :users, through: :comments
+  belongs_to :user
 
   validates :name, :presence => true
   validates :description, :presence => true
