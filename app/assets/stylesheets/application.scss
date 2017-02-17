@@ -3,7 +3,11 @@ $primary-color: color("blue", "lighten-2") !default;
 $secondary-color: color("yellow", "base") !default;
 @import "materialize";
 
-
-.nav-wrapper {
-  z-index: 5000000
+.product-image {
+  width: 300px;
+  margin-top: 20px;
+  float: right;
+  img {
+    width: 100%;
+  }
 }
