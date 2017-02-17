@@ -3,9 +3,25 @@
 <div class="product-image">
   <img src="<%= @product.image %>" alt="" />
 </div>
+
 <h3>PRODUCT INFORMATION</h3>
 <h4>Price: <%= number_to_currency(@product.price) %></h4>
 <h4>Description: <%= @product.description %></h4>
 <br>
-<%= link_to "Edit Product", edit_user_product_path(@product), class: "btn" %>
-<%= link_to "Delete Product", user_product_path(@product), :data => {:confirm => "Are you sure?", :method => "delete"}, class: "btn" %>
+
+<% if @comments %>
+  <% @comments.each do |comment| %>
+    <h5>Comments:</h5>
+    <%= comment.content %>
+    <br>
+    <%= link_to "Edit Comment", edit_product_comment_path(@product, comment) %>
+    <%= link_to "Delete Comment", product_comment_path(@product, comment), :data => {:confirm => "Are you sure?", :method => "delete"} %>
+  <% end %>
+<% end %>
+<br>
+
+<%= link_to "Add Comment", new_product_comment_path(@product), class: "btn" %>
+<br>
+<br>
+<%= link_to "Edit Product", edit_product_path(@product), class: "btn" %>
+<%= link_to "Delete Product", product_path(@product), :data => {:confirm => "Are you sure?", :method => "delete"}, class: "btn" %>

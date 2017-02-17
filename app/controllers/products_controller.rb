@@ -2,9 +2,7 @@ class ProductsController < ApplicationController
   before_filter :authenticate_user!
 
   def index
-    # @product = Product.new
     @products = Product.all
-    # @user = current_user.id
   end
 
   def new
@@ -14,41 +12,44 @@ class ProductsController < ApplicationController
   def create
     @product = Product.new(product_params)
     if @product.save
-      redirect_to user_products_path
+      flash[:notice] = "Product Added"
+      redirect_to products_path
     else
-      render :back
+      flash[:alert] = "Please Try Again"
+      redirect_to :back
     end
   end
 
   def show
-    @user = current_user.id
     @product = Product.find(params[:id])
   end
 
   def edit
-    @user = current_user.id
     @product = Product.find(params[:id])
   end
 
   def update
-    @user = current_user.id
     @product = Product.find(params[:id])
-    if @product.update
-      redirect_to :back
+    if @product.update(product_params)
+      flash[:notice] = "Update Successful"
+      redirect_to products_path
     else
-      render :edit
+      flash[:alert] = "Update Failed"
+      redirect_to :back
     end
   end
 
   def destroy
-    @user = current_user.id
     @product = Product.find(params[:id])
+    @product.comments.each do |comment|
+      comment.destroy
+    end
     @product.destroy
     redirect_to products_path
   end
 
 private
   def product_params
-    params.require(:product).permit(:name, :description, :price)
+    params.require(:product).permit(:name, :description, :price, :user_id)
   end
 end
