@@ -1,5 +1,7 @@
 <h1>All Product Inventory</h1>
-<%= link_to "Add New Product", new_product_path, class: "btn" %>
+<% if current_user && current_user.admin? %>
+  <%= link_to "Add New Product", new_product_path, class: "btn" %>
+<% end %>
 
 <ul class="well">
   <% @products.each do |product| %>
