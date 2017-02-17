@@ -582,6 +582,8 @@
         null,
         1,
         1,
+        null,
+        1,
         null
       ],
       "/Users/Guest/Desktop/fishy/app/models/application_record.rb": [
@@ -856,9 +858,10 @@
         1,
         2,
         2,
+        2,
         null
       ]
     },
-    "timestamp": 1487370218
+    "timestamp": 1487374442
   }
 }

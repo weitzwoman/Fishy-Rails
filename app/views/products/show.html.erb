@@ -9,16 +9,18 @@
 <h4>Description: <%= @product.description %></h4>
 <br>
 
-<% if @comments %>
-  <h5>Comments:</h5>
-  <% @comments.each do |comment| %>
-    <%= comment.content %>
-    <br>
-    <% if current_user && current_user.admin? %>
-      <%= link_to "Edit Comment", edit_product_comment_path(@product, comment) %> |     <%= link_to "Delete Comment", product_comment_path(@product, comment), :data => {:confirm => "Are you sure?", :method => "delete"} %>
+<% if current_user %>
+  <% if @comments %>
+    <h5>Comments:</h5>
+    <% @comments.each do |comment| %>
+      <%= comment.content %>
+      <br>
+      <% if current_user && current_user.admin? %>
+        <%= link_to "Edit Comment", edit_product_comment_path(@product, comment) %> |     <%= link_to "Delete Comment", product_comment_path(@product, comment), :data => {:confirm => "Are you sure?", :method => "delete"} %>
+      <% end %>
+      <br>
+      <br>
     <% end %>
-    <br>
-    <br>
   <% end %>
 <% end %>
 <br>

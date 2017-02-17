@@ -14,14 +14,14 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-02-17T14:23:38-08:00">2017-02-17T14:23:38-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-02-17T15:34:02-08:00">2017-02-17T15:34:02-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">76.55%</span></span>
+    (<span class="covered_percent"><span class="red">76.75%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
@@ -32,8 +32,8 @@
   <a name="AllFiles"></a>
   <div>
     <b>41</b> files in total.
-    <b>226</b> relevant lines. 
-    <span class="green"><b>173</b> lines covered</span> and
+    <b>228</b> relevant lines. 
+    <span class="green"><b>175</b> lines covered</span> and
     <span class="red"><b>53</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -203,9 +203,9 @@
       <tr>
         <td class="strong"><a href="#3cc427228bd299684d7c66b61c668db45d2dd16c" class="src_link" title="app/models/user.rb">app/models/user.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>8</td>
-        <td>4</td>
-        <td>4</td>
+        <td>10</td>
+        <td>5</td>
+        <td>5</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -433,11 +433,11 @@
       <tr>
         <td class="strong"><a href="#947183b0c7ec2dc3732c958ad4d5d0a58eab5019" class="src_link" title="spec/models/user_spec.rb">spec/models/user_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>6</td>
-        <td>4</td>
-        <td>4</td>
+        <td>7</td>
+        <td>5</td>
+        <td>5</td>
         <td>0</td>
-        <td>1.5</td>
+        <td>1.6</td>
       </tr>
       
       <tr>
@@ -1369,7 +1369,7 @@
         <li class="missed" data-hits="0" data-linenumber="9">
           
           
-          <code class="ruby">    params.require(:user).permit(:email, :password, :password_confirmation, :current_password)</code>
+          <code class="ruby">    params.require(:user).permit(:email, :password, :password_confirmation, :current_password, :admin)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">
@@ -1561,7 +1561,7 @@
         <li class="missed" data-hits="0" data-linenumber="20">
           
           
-          <code class="ruby">    params.require(:user).permit(:email, :password, :password_confirmation)</code>
+          <code class="ruby">    params.require(:user).permit(:email, :password, :password_confirmation, :admin)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="21">
@@ -1843,8 +1843,8 @@
     <h3>app/models/user.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -1895,6 +1895,18 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  validates :email, :presence =&gt; true</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
           
           
           <code class="ruby">end</code>
@@ -5365,8 +5377,8 @@
     <h3>spec/models/user_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>4</b> relevant lines. 
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -5395,16 +5407,22 @@
         <li class="covered" data-hits="2" data-linenumber="4">
           <span class="hits">2</span>
           
-          <code class="ruby">  it { should have_many(:products) }</code>
+          <code class="ruby">  it { should validate_presence_of :email }</code>
         </li>
       
         <li class="covered" data-hits="2" data-linenumber="5">
           <span class="hits">2</span>
           
+          <code class="ruby">  it { should have_many(:products) }</code>
+        </li>
+      
+        <li class="covered" data-hits="2" data-linenumber="6">
+          <span class="hits">2</span>
+          
           <code class="ruby">  it { should have_many(:comments) }</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby">end</code>
