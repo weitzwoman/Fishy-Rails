@@ -5,7 +5,7 @@ describe "add comments" do
     user = FactoryGirl.create(:user)
     product = FactoryGirl.create(:product)
     visit "/products/1/comments/new"
-    fill_in "Enter Comment", :with => "Something interesting"
+    fill_in "comment[content]", :with => "Something interesting"
     click_on "Create Comment"
     expect(page).to have_content 'Something'
   end

@@ -840,6 +840,16 @@
         1,
         1,
         null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/Guest/Desktop/fishy/spec/models/comment_spec.rb": [
@@ -872,6 +882,6 @@
         null
       ]
     },
-    "timestamp": 1487380565
+    "timestamp": 1487381770
   }
 }
