@@ -1,4 +1,5 @@
 <%= form_for [@product, @comment] do |f| %>
+  <%= f.label :content, "Enter Comment" %>
   <%= f.text_field :content, placeholder: "Enter Comment"%>
   <%= f.text_field :product_id, type: 'hidden', value: @product.id %>
   <%= f.text_field :user_id, type: 'hidden', value: current_user.id %>

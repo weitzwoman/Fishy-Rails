@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/Guest/Desktop/fishy/spec/features/add_user_pages_spec.rb": [
+      "/Users/Guest/Desktop/fishy/spec/features/add_comment_pages_spec.rb": [
         1,
         null,
         1,
@@ -10,16 +10,8 @@
         1,
         1,
         1,
-        1,
-        1,
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        1,
-        1,
+        0,
+        0,
         null,
         null
       ],
@@ -31,8 +23,8 @@
         1,
         1,
         1,
-        1,
-        1,
+        null,
+        null,
         null,
         null,
         null,
@@ -665,7 +657,7 @@
       "/Users/Guest/Desktop/fishy/app/controllers/home_controller.rb": [
         1,
         1,
-        3,
+        2,
         null,
         null
       ],
@@ -674,7 +666,7 @@
         1,
         null,
         1,
-        0,
+        2,
         null,
         null,
         1,
@@ -693,8 +685,8 @@
         null,
         null,
         1,
-        0,
-        0,
+        1,
+        1,
         null,
         null,
         1,
@@ -732,7 +724,7 @@
         null,
         1,
         1,
-        2,
+        0,
         null,
         null,
         1,
@@ -798,7 +790,7 @@
         1,
         null
       ],
-      "/Users/Guest/Desktop/fishy/spec/factories/comment.rb": [
+      "/Users/Guest/Desktop/fishy/spec/factories/comments.rb": [
         1,
         1,
         1,
@@ -807,18 +799,8 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/fishy/spec/factories/product.rb": [
+      "/Users/Guest/Desktop/fishy/spec/factories/products.rb": [
         1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/Users/Guest/Desktop/fishy/spec/factories/user.rb": [
         1,
         1,
         1,
@@ -828,9 +810,36 @@
         null,
         null
       ],
-      "/Users/Guest/Desktop/fishy/spec/support/factory_girl.rb": [
+      "/Users/Guest/Desktop/fishy/spec/factories/users.rb": [
         1,
         1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null
+      ],
+      "/Users/Guest/Desktop/fishy/spec/features/add_product_pages_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/Guest/Desktop/fishy/spec/models/comment_spec.rb": [
@@ -863,6 +872,6 @@
         null
       ]
     },
-    "timestamp": 1487377063
+    "timestamp": 1487380565
   }
 }
