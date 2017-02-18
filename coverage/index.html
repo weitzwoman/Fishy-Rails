@@ -14,26 +14,26 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-02-17T15:34:02-08:00">2017-02-17T15:34:02-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-02-17T16:02:20-08:00">2017-02-17T16:02:20-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="red">76.75%</span></span>
+    (<span class="covered_percent"><span class="red">78.46%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.83
+         0.85
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>41</b> files in total.
-    <b>228</b> relevant lines. 
-    <span class="green"><b>175</b> lines covered</span> and
+    <b>246</b> relevant lines. 
+    <span class="green"><b>193</b> lines covered</span> and
     <span class="red"><b>53</b> lines missed </span>
   </div>
   <table class="file_list">
@@ -374,30 +374,30 @@
         <td class="strong"><a href="#d64178230c30cd42642565a714867670c9f0256c" class="src_link" title="spec/factories/comment.rb">spec/factories/comment.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>7</td>
+        <td>5</td>
+        <td>5</td>
         <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0.0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#cfd8ef36da086fbba152afa71953c713ed6acdc3" class="src_link" title="spec/factories/product.rb">spec/factories/product.rb</a></td>
         <td class="green strong">100.0 %</td>
         <td>9</td>
+        <td>7</td>
+        <td>7</td>
         <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0.0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
         <td class="strong"><a href="#32969940d04fb8c1ac8a65204175fa1eeea16606" class="src_link" title="spec/factories/user.rb">spec/factories/user.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>7</td>
+        <td>8</td>
+        <td>6</td>
+        <td>6</td>
         <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0.0</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -619,7 +619,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  before_filter :authenticate_user!</code>
+          <code class="ruby">  before_action :authenticate_user!</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
@@ -973,7 +973,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  before_filter :authenticate_user!</code>
+          <code class="ruby">  before_action except: [:index, :show]</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
@@ -1285,7 +1285,7 @@
         <li class="missed" data-hits="0" data-linenumber="54">
           
           
-          <code class="ruby">    params.require(:product).permit(:name, :description, :price, :user_id)</code>
+          <code class="ruby">    params.require(:product).permit(:name, :description, :price, :user_id, :image)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="55">
@@ -1453,7 +1453,7 @@
         <li class="covered" data-hits="1" data-linenumber="2">
           <span class="hits">1</span>
           
-          <code class="ruby">  before_filter :authenticate_user!</code>
+          <code class="ruby">  before_action :authenticate_user!</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="3">
@@ -4879,7 +4879,7 @@
         <li class="never" data-hits="" data-linenumber="4">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">  </code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="5">
@@ -4915,8 +4915,8 @@
     <h3>spec/factories/comment.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>0</b> relevant lines. 
-      <span class="green"><b>0</b> lines covered</span> and
+      <b>5</b> relevant lines. 
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -4924,46 +4924,46 @@
   <pre>
     <ol>
       
-        <li class="never" data-hits="" data-linenumber="1">
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"># FactoryGirl.define do</code>
+          <code class="ruby">FactoryGirl.define do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="2">
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#   factory :product do</code>
+          <code class="ruby">  factory :comment do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#     content &quot;That Crab was great&quot;</code>
+          <code class="ruby">    content &quot;That Crab was great&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#     product_id 2</code>
+          <code class="ruby">    product_id 2</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#     user_id 2</code>
+          <code class="ruby">    user_id 2</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="6">
           
           
-          <code class="ruby">#   end</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby"># end</code>
+          <code class="ruby">end</code>
         </li>
       
     </ol>
@@ -4975,8 +4975,8 @@
     <h3>spec/factories/product.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>0</b> relevant lines. 
-      <span class="green"><b>0</b> lines covered</span> and
+      <b>7</b> relevant lines. 
+      <span class="green"><b>7</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -4984,58 +4984,58 @@
   <pre>
     <ol>
       
-        <li class="never" data-hits="" data-linenumber="1">
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"># FactoryGirl.define do</code>
+          <code class="ruby">FactoryGirl.define do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="2">
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#   factory :product do</code>
+          <code class="ruby">  factory :product do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#     name &quot;Salmon&quot;</code>
+          <code class="ruby">    name &quot;Salmon&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#     description &quot;Fresh from rivers in Alaska&quot;</code>
+          <code class="ruby">    description &quot;Fresh from rivers in Alaska&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#     price 12</code>
+          <code class="ruby">    price 12</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#     image &quot;salmonphoto.jpeg&quot;</code>
+          <code class="ruby">    image &quot;salmonphoto.jpeg&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="7">
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#     user_id 1</code>
+          <code class="ruby">    user_id 1</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="8">
           
           
-          <code class="ruby">#   end</code>
+          <code class="ruby">  end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="9">
           
           
-          <code class="ruby"># end</code>
+          <code class="ruby">end</code>
         </li>
       
     </ol>
@@ -5047,8 +5047,8 @@
     <h3>spec/factories/user.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>0</b> relevant lines. 
-      <span class="green"><b>0</b> lines covered</span> and
+      <b>6</b> relevant lines. 
+      <span class="green"><b>6</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -5056,46 +5056,52 @@
   <pre>
     <ol>
       
-        <li class="never" data-hits="" data-linenumber="1">
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby"># FactoryGirl.define do</code>
+          <code class="ruby">FactoryGirl.define do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="2">
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#   factory :user do</code>
+          <code class="ruby">  factory :user do</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="3">
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#     email &quot;user@email.com&quot;</code>
+          <code class="ruby">    email &quot;user@email.com&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="4">
+        <li class="covered" data-hits="1" data-linenumber="4">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#     password &quot;password123&quot;</code>
+          <code class="ruby">    password &quot;password123&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="5">
+        <li class="covered" data-hits="1" data-linenumber="5">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#     admin false</code>
+          <code class="ruby">    password_confirmation &quot;pas&quot;</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="6">
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
           
-          
-          <code class="ruby">#   end</code>
+          <code class="ruby">    admin false</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="7">
           
           
-          <code class="ruby"># end</code>
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">end</code>
         </li>
       
     </ol>
@@ -5485,19 +5491,19 @@
         <li class="covered" data-hits="1" data-linenumber="7">
           <span class="hits">1</span>
           
-          <code class="ruby">require &#39;support/factory_girl&#39;</code>
+          <code class="ruby">require &#39;rspec/rails&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="8">
           <span class="hits">1</span>
           
-          <code class="ruby">require &#39;rspec/rails&#39;</code>
+          <code class="ruby">require &#39;capybara/rails&#39;</code>
         </li>
       
         <li class="covered" data-hits="1" data-linenumber="9">
           <span class="hits">1</span>
           
-          <code class="ruby">require &#39;capybara/rails&#39;</code>
+          <code class="ruby">require &#39;support/factory_girl&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="10">

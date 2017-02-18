@@ -799,31 +799,32 @@
         null
       ],
       "/Users/Guest/Desktop/fishy/spec/factories/comment.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ],
       "/Users/Guest/Desktop/fishy/spec/factories/product.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ],
       "/Users/Guest/Desktop/fishy/spec/factories/user.rb": [
-        null,
-        null,
-        null,
-        null,
-        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -862,6 +863,6 @@
         null
       ]
     },
-    "timestamp": 1487374442
+    "timestamp": 1487376140
   }
 }
