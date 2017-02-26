@@ -18,13 +18,9 @@ describe "Products" do
     expect(page).to have_content 'Price'
   end
 
-  # it "will edit a product page" do
+  # it 'will add a product, if user admin' do
   #   user = FactoryGirl.create(:user, :admin => true)
-  #   product = FactoryGirl.create(:product)
-  #   visit "/products/1"
-  #   click_on "Edit Product"
-  #   fill_in "Name", :with => "Crab"
-  #   click_on "Update Product"
-  #   expect(page).to have_content "Crab"
+  #   login_as(user)
   # end
+
 end

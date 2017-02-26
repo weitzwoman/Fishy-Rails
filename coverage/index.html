@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-02-25T22:48:54-08:00">2017-02-25T22:48:54-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-02-25T22:52:33-08:00">2017-02-25T22:52:33-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">87.27%</span></span>
+    (<span class="covered_percent"><span class="yellow">89.01%</span></span>
      covered at
      <span class="covered_strength">
-       <span class="red">
-         0.98
+       <span class="green">
+         1.0
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>43</b> files in total.
-    <b>275</b> relevant lines. 
-    <span class="green"><b>240</b> lines covered</span> and
-    <span class="red"><b>35</b> lines missed </span>
+    <b>282</b> relevant lines. 
+    <span class="green"><b>251</b> lines covered</span> and
+    <span class="red"><b>31</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -102,12 +102,12 @@
       
       <tr>
         <td class="strong"><a href="#19a8e8b39edb3ed148ecbd3499786daa3fc3a8c5" class="src_link" title="app/controllers/products_controller.rb">app/controllers/products_controller.rb</a></td>
-        <td class="red strong">58.82 %</td>
+        <td class="red strong">70.59 %</td>
         <td>56</td>
         <td>34</td>
-        <td>20</td>
-        <td>14</td>
-        <td>0.8</td>
+        <td>24</td>
+        <td>10</td>
+        <td>1.0</td>
       </tr>
       
       <tr>
@@ -413,7 +413,7 @@
       <tr>
         <td class="strong"><a href="#3b25aca7107f3a9521be3a6566cb03833d22c989" class="src_link" title="spec/features/add_product_pages_spec.rb">spec/features/add_product_pages_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>30</td>
+        <td>26</td>
         <td>15</td>
         <td>15</td>
         <td>0</td>
@@ -423,9 +423,9 @@
       <tr>
         <td class="strong"><a href="#09f3ff8b48c6aa4c94f502820db69afa8ca31e25" class="src_link" title="spec/features/edit_products_pages_spec.rb">spec/features/edit_products_pages_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>15</td>
-        <td>11</td>
-        <td>11</td>
+        <td>25</td>
+        <td>18</td>
+        <td>18</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -973,11 +973,11 @@
         <div class="source_table" id="19a8e8b39edb3ed148ecbd3499786daa3fc3a8c5">
   <div class="header">
     <h3>app/controllers/products_controller.rb</h3>
-    <h4><span class="red">58.82 %</span> covered</h4>
+    <h4><span class="red">70.59 %</span> covered</h4>
     <div>
       <b>34</b> relevant lines. 
-      <span class="green"><b>20</b> lines covered</span> and
-      <span class="red"><b>14</b> lines missed.</span>
+      <span class="green"><b>24</b> lines covered</span> and
+      <span class="red"><b>10</b> lines missed.</span>
     </div>
   </div>
   
@@ -1008,8 +1008,8 @@
           <code class="ruby">  def index</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="5">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="5">
+          <span class="hits">4</span>
           
           <code class="ruby">    @products = Product.all</code>
         </li>
@@ -1122,14 +1122,14 @@
           <code class="ruby">  def show</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="24">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="24">
+          <span class="hits">4</span>
           
           <code class="ruby">    @product = Product.find(params[:id])</code>
         </li>
       
-        <li class="covered" data-hits="3" data-linenumber="25">
-          <span class="hits">3</span>
+        <li class="covered" data-hits="4" data-linenumber="25">
+          <span class="hits">4</span>
           
           <code class="ruby">    @comments = @product.comments</code>
         </li>
@@ -1242,14 +1242,14 @@
           <code class="ruby">  def destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="44">
-          
+        <li class="covered" data-hits="1" data-linenumber="44">
+          <span class="hits">1</span>
           
           <code class="ruby">    @product = Product.find(params[:id])</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="45">
-          
+        <li class="covered" data-hits="1" data-linenumber="45">
+          <span class="hits">1</span>
           
           <code class="ruby">    @product.comments.each do |comment|</code>
         </li>
@@ -1266,14 +1266,14 @@
           <code class="ruby">    end</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="48">
-          
+        <li class="covered" data-hits="1" data-linenumber="48">
+          <span class="hits">1</span>
           
           <code class="ruby">    @product.destroy</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="49">
-          
+        <li class="covered" data-hits="1" data-linenumber="49">
+          <span class="hits">1</span>
           
           <code class="ruby">    redirect_to products_path</code>
         </li>
@@ -5415,7 +5415,7 @@
         <li class="never" data-hits="" data-linenumber="21">
           
           
-          <code class="ruby">  # it &quot;will edit a product page&quot; do</code>
+          <code class="ruby">  # it &#39;will add a product, if user admin&#39; do</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="22">
@@ -5427,46 +5427,22 @@
         <li class="never" data-hits="" data-linenumber="23">
           
           
-          <code class="ruby">  #   product = FactoryGirl.create(:product)</code>
+          <code class="ruby">  #   login_as(user)</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="24">
           
           
-          <code class="ruby">  #   visit &quot;/products/1&quot;</code>
+          <code class="ruby">  # end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="25">
           
           
-          <code class="ruby">  #   click_on &quot;Edit Product&quot;</code>
+          <code class="ruby"></code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="26">
-          
-          
-          <code class="ruby">  #   fill_in &quot;Name&quot;, :with =&gt; &quot;Crab&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="27">
-          
-          
-          <code class="ruby">  #   click_on &quot;Update Product&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="28">
-          
-          
-          <code class="ruby">  #   expect(page).to have_content &quot;Crab&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="29">
-          
-          
-          <code class="ruby">  # end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="30">
           
           
           <code class="ruby">end</code>
@@ -5481,8 +5457,8 @@
     <h3>spec/features/edit_products_pages_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>11</b> relevant lines. 
-      <span class="green"><b>11</b> lines covered</span> and
+      <b>18</b> relevant lines. 
+      <span class="green"><b>18</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -5575,6 +5551,66 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="15">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;will delete a product page&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    user = FactoryGirl.create(:user, :admin =&gt; true)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    product = FactoryGirl.create(:product)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    login_as(user)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit product_path(product)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="21">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &quot;Delete Product&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="22">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to_not have_content &quot;Salmon&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
           
           
           <code class="ruby">end</code>
