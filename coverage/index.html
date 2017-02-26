@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-02-25T22:36:59-08:00">2017-02-25T22:36:59-08:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-02-25T22:39:25-08:00">2017-02-25T22:39:25-08:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="yellow">83.27%</span></span>
+    (<span class="covered_percent"><span class="yellow">84.47%</span></span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.89
+         0.94
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
     <b>42</b> files in total.
-    <b>257</b> relevant lines. 
-    <span class="green"><b>214</b> lines covered</span> and
-    <span class="red"><b>43</b> lines missed </span>
+    <b>264</b> relevant lines. 
+    <span class="green"><b>223</b> lines covered</span> and
+    <span class="red"><b>41</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -82,12 +82,12 @@
       
       <tr>
         <td class="strong"><a href="#38fbc828e2af96ea4b58db8e5db24560aafc84d6" class="src_link" title="app/controllers/comments_controller.rb">app/controllers/comments_controller.rb</a></td>
-        <td class="red strong">54.84 %</td>
+        <td class="red strong">61.29 %</td>
         <td>48</td>
         <td>31</td>
-        <td>17</td>
-        <td>14</td>
-        <td>0.5</td>
+        <td>19</td>
+        <td>12</td>
+        <td>0.9</td>
       </tr>
       
       <tr>
@@ -403,9 +403,9 @@
       <tr>
         <td class="strong"><a href="#579f7b2f1e3327af99059953a220ee9730e30d98" class="src_link" title="spec/features/add_comment_pages_spec.rb">spec/features/add_comment_pages_spec.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>13</td>
-        <td>10</td>
-        <td>10</td>
+        <td>22</td>
+        <td>17</td>
+        <td>17</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -609,11 +609,11 @@
         <div class="source_table" id="38fbc828e2af96ea4b58db8e5db24560aafc84d6">
   <div class="header">
     <h3>app/controllers/comments_controller.rb</h3>
-    <h4><span class="red">54.84 %</span> covered</h4>
+    <h4><span class="red">61.29 %</span> covered</h4>
     <div>
       <b>31</b> relevant lines. 
-      <span class="green"><b>17</b> lines covered</span> and
-      <span class="red"><b>14</b> lines missed.</span>
+      <span class="green"><b>19</b> lines covered</span> and
+      <span class="red"><b>12</b> lines missed.</span>
     </div>
   </div>
   
@@ -644,14 +644,14 @@
           <code class="ruby">  def new</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="5">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="5">
+          <span class="hits">3</span>
           
           <code class="ruby">    @product = Product.find(params[:product_id])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="6">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="3" data-linenumber="6">
+          <span class="hits">3</span>
           
           <code class="ruby">    @comment = Comment.new</code>
         </li>
@@ -674,20 +674,20 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="10">
+          <span class="hits">2</span>
           
           <code class="ruby">    @product = Product.find(params[:product_id])</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="11">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="11">
+          <span class="hits">2</span>
           
           <code class="ruby">    @comment = Comment.new(comment_params)</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="12">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="12">
+          <span class="hits">2</span>
           
           <code class="ruby">    if @comment.save</code>
         </li>
@@ -710,14 +710,14 @@
           <code class="ruby">    else</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="16">
-          
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
           
           <code class="ruby">      flash[:alert] = &quot;Please try again&quot;</code>
         </li>
       
-        <li class="missed" data-hits="0" data-linenumber="17">
-          
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
           
           <code class="ruby">      redirect_to :back</code>
         </li>
@@ -890,8 +890,8 @@
           <code class="ruby">  def comment_params</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="46">
-          <span class="hits">1</span>
+        <li class="covered" data-hits="2" data-linenumber="46">
+          <span class="hits">2</span>
           
           <code class="ruby">    params.require(:comment).permit(:content, :product_id, :user_id)</code>
         </li>
@@ -5123,8 +5123,8 @@
     <h3>spec/features/add_comment_pages_spec.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>10</b> relevant lines. 
-      <span class="green"><b>10</b> lines covered</span> and
+      <b>17</b> relevant lines. 
+      <span class="green"><b>17</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -5205,6 +5205,60 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="13">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="14">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;will show errors if basic user enter blank field for comments&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    user = FactoryGirl.create(:user)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="16">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    product = FactoryGirl.create(:product)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="17">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    login_as(user)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit new_product_comment_path(product)</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="19">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &quot;Create Comment&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="20">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content &#39;Please try again&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
           
           
           <code class="ruby">end</code>
