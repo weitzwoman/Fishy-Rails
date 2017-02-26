@@ -20,6 +20,5 @@ describe "editing Products" do
     visit product_path(product)
     click_on "Delete Product"
     expect(page).to_not have_content "Salmon"
-
   end
 end
